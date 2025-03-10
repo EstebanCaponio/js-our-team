@@ -38,7 +38,7 @@ const teamMembers = [
 ];
 
 
-const container = document.querySelector('.container');
+const container = document.querySelector('.my-container');
 
 addMembers(teamMembers, container);
 
