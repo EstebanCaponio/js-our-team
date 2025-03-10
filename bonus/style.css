@@ -27,10 +27,10 @@ body{
     flex-wrap: wrap;
     column-gap: 40px;
     gap: 40px;
+    margin-bottom: 80px;
 }
 
-.card {
-    background-color: yellow;
+.my-card {
     width: calc((100% - 80px) / 3);
     display: flex;
 }

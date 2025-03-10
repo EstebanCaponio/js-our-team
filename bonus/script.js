@@ -57,7 +57,7 @@ function addMembers(array, boxTest) {
     // const email = array[i].email;
     // const img = array[i].img;
 
-    boxTest.innerHTML += ` <div class="card">
+    boxTest.innerHTML += ` <div class="my-card">
             <div>
                 <img class="image-profile" src="${img}" alt="">
             </div>
