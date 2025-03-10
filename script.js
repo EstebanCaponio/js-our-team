@@ -37,4 +37,35 @@ const teamMembers = [
   }
 ];
 
-console.log('ciao')
+
+const container = document.querySelector('.container');
+
+addMembers(teamMembers, container);
+
+
+
+// funzione per creazione struttura
+function addMembers(array, boxTest) {
+
+
+  for (let i = 0; i < array.length; i++) {
+
+    const name = array[i].name;
+    const role = array[i].role;
+    const email = array[i].email;
+    const img = array[i].img;
+
+    boxTest.innerHTML += ` <div class="card">
+            <div>
+                <img class="image-profile" src="${img}" alt="">
+            </div>
+            <div class="description">
+                <h3 class="name">${name}</h3>
+                <div class="role">${role}</div>
+                <div class="email">${email}</div>
+            </div>
+        </div>`;
+  }
+}
+
+// funzione per inserimento paramentri
