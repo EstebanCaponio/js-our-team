@@ -1,0 +1,57 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+body{
+    margin: 0 50px;
+}
+
+.my-h1 {
+    color: #e53170;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 3rem;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 80px;
+}
+
+.my-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    gap: 40px;
+}
+
+.card {
+    background-color: yellow;
+    width: calc((100% - 80px) / 3);
+    display: flex;
+}
+
+.image-profile{
+    display: block;
+    max-width: 125px;
+}
+
+.description{
+    flex-grow: 1;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.name{
+font-weight: bold;
+margin: 0;
+}
+
+.email{
+    color: #5ccbf2;
+}
