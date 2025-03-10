@@ -48,6 +48,7 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   newCard(container);
+  form.reset();
 })
 
 
