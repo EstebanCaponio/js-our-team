@@ -5,8 +5,8 @@
     font-family: "Fredoka", sans-serif;
 }
 
-body{
-    margin: 0 50px;
+.my-body{
+    padding: 0 50px;
 }
 
 .my-h1 {
@@ -54,4 +54,36 @@ margin: 0;
 
 .email{
     color: #5ccbf2;
+}
+
+
+
+
+@media screen and (max-width: 1280px){
+    /********** main **********/
+    .my-card {
+        width: calc((100% - 40px) / 2);
+    }
+}
+
+@media screen and (max-width: 825px){
+    /********** main **********/
+    .my-card {
+        width: calc((100%) / 1);
+    }
+}
+
+@media screen and (max-width: 450px){
+    /********** main **********/
+    .my-body{
+        padding: 0 10px;
+    }
+
+    .image-profile{
+        max-width: 100px;
+    }
+
+    .description{
+        padding: 10px;
+    }
 }
