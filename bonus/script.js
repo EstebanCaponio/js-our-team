@@ -37,25 +37,26 @@ const teamMembers = [
   }
 ];
 
-
+// stampa membri nel dom
 const container = document.querySelector('.my-container');
+const form = document.querySelector('form');
 
 addMembers(teamMembers, container);
 
+// aggiunta membri
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  newCard(container);
+})
 
 
 // funzione per creazione struttura
 function addMembers(array, boxTest) {
 
-
   for (let i = 0; i < array.length; i++) {
 
-
-    const {name, role, img, email} = array[i];
-    // const name = array[i].name;
-    // const role = array[i].role;
-    // const email = array[i].email;
-    // const img = array[i].img;
+    const { name, role, img, email } = array[i];
 
     boxTest.innerHTML += ` <div class="my-card">
             <div>
@@ -70,4 +71,21 @@ function addMembers(array, boxTest) {
   }
 }
 
-// funzione per inserimento paramentri
+// funzione aggiunta card
+function newCard(boxTest) {
+  const newName = document.getElementById('new-name-surname').value;
+  const newRole = document.getElementById('new-role').value;
+  const newEmail = document.getElementById('new-email').value;
+  const newImge = document.getElementById('new-image').value;
+
+  boxTest.innerHTML += ` <div class="my-card">
+            <div>
+                <img class="image-profile" src="${newImge}" alt="">
+            </div>
+            <div class="description">
+                <h3 class="name">${newName}</h3>
+                <div class="role">${newRole}</div>
+                <div class="email">${newEmail}</div>
+            </div>
+        </div>`;
+}
