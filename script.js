@@ -50,10 +50,12 @@ function addMembers(array, boxTest) {
 
   for (let i = 0; i < array.length; i++) {
 
-    const name = array[i].name;
-    const role = array[i].role;
-    const email = array[i].email;
-    const img = array[i].img;
+
+    const {name, role, img, email} = array[i];
+    // const name = array[i].name;
+    // const role = array[i].role;
+    // const email = array[i].email;
+    // const img = array[i].img;
 
     boxTest.innerHTML += ` <div class="card">
             <div>
